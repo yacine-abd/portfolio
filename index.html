@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+<body>
+    <!-- =========================================
+     INTRO / BOOT SEQUENCE
+========================================= -->
+
+<div id="intro">
+
+    <div class="intro-noise"></div>
+
+    <div class="intro-corner intro-top-left">
+        YACINE.DEV
+    </div>
+
+    <div class="intro-corner intro-top-right">
+        2026 / 01
+    </div>
+
+    <div class="intro-corner intro-bottom-left">
+        DESIGN × CODE
+    </div>
+
+    <div class="intro-corner intro-bottom-right">
+        PORTFOLIO
+    </div>
+
+    <div class="intro-content">
+
+        <div class="intro-status">
+            <span class="status-dot"></span>
+            <span id="intro-status-text">
+                INITIALIZING EXPERIENCE
+            </span>
+        </div>
+
+        <div class="intro-loader">
+            <div id="intro-progress"></div>
+        </div>
+
+        <div class="intro-percent">
+            <span id="intro-percent">00</span>
+            <span>%</span>
+        </div>
+
+        <div class="intro-name">
+            <span>YACINE</span>
+            <span>ABDELLI</span>
+        </div>
+
+        <div class="intro-subtitle">
+            DESIGN <span></span> CODE <span></span> EXPERIENCE
+        </div>
+
+        <div class="intro-enter">
+            <span id="intro-enter-text">
+                ENTERING PORTFOLIO
+            </span>
+
+            <span class="intro-arrow">↗</span>
+        </div>
+
+    </div>
+
+    <div class="intro-line intro-line-left"></div>
+    <div class="intro-line intro-line-right"></div>
+
+</div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">YACINE</a>
+
+        <nav class="nav-links">
+            <span class="nav-indicator"></span>
+            
+
+            <a href="#home" class="nav-link active">
+    <i data-lucide="house"></i>
+    <span>Home</span>
+</a>
+
+<a href="#about" class="nav-link">
+    <i data-lucide="user"></i>
+    <span>About</span>
+</a>
+
+<a href="#projects" class="nav-link">
+    <i data-lucide="folder"></i>
+    <span>Projects</span>
+</a>
+
+<a href="#services" class="nav-link">
+    <i data-lucide="code"></i>
+    <span>Services</span>
+</a>
+
+
+<a href="#contact" class="nav-link">
+    <i data-lucide="mail"></i>
+    <span>Contact</span>
+</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <i data-lucide="moon"></i>
+</button>
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home" class="section home">
+        <div class="wrapper">
+            <h1>
+                Hi, I'm <span>Yacine</span>
+            </h1>
+            <div class="typing-container">
+    <span id="typing"></span>
+</div>
+<p class="hero-description">
+    I'm a passionate developer focused on web development, programming,
+    and modern user interfaces. I enjoy turning ideas into clean,
+    functional, and engaging digital experiences.
+</p>
+<div class="icon-info">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+    <span>Bassed in M'sila</span>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business-icon lucide-briefcase-business"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+    <span>Available Now</span>
+
+</div>
+<div class="icon-buttons">
+            <a href="#about" class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                About me
+            </a>
+            <a href="#" class="button2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download-icon lucide-download"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+                download cv
+            </a>
+        </div>
+        <hr class="hr">
+        <div class="social-links">
+
+    <span>Follow me :</span>
+
+    <a href="#" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="#" aria-label="Discord">
+        <i class="fa-brands fa-discord"></i>
+    </a>
+
+    <a href="#" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="#" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    
+
+</div>
+        </div>
+        
+        <div class="hero-image">
+    <img src="images/developer-removebg-preview (1).png" alt="Developer illustration">
+</div>
+    </section>
+
+    
+    <!-- ABOUT -->
+<section id="about" class="section about-section">
+
+    <div class="about-container">
+
+        <!-- LEFT SIDE : IMAGE -->
+        <div class="about-image about-reveal">
+
+            <div class="image-frame">
+                <img
+                    src="images/ChatGPT_Image_Aug_17__2026__11_23_29_PM-removebg-preview.png"
+                    alt="Yacine"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE : CONTENT -->
+        <div class="about-content">
+
+            <p class="section-number about-reveal">
+                About Me
+            </p>
+
+            <h2 class="about-title about-reveal">
+                Building Meaningful<br>
+                Digital Experiences
+            </h2>
+
+            <div class="title-line about-reveal"></div>
+
+            <p class="about-text about-reveal">
+                I'm a creative front-end developer passionate about building
+                modern and responsive web experiences. My journey began with
+                a love for design and evolved into a deep curiosity for how
+                web experiences combine logic with creativity to bring ideas to life.
+            </p>
+
+            <p class="about-text about-reveal">
+                When I'm not coding, I enjoy learning new technologies,
+                improving my projects, and exploring better ways to make the
+                web faster and more engaging.
+            </p>
+
+            <h3 class="drives-title about-reveal">
+                What Drives Me
+            </h3>
+
+            <!-- CARDS -->
+            <div class="about-cards">
+
+                <div class="about-card about-reveal">
+                    <i data-lucide="code-2"></i>
+
+                    <h4>Languages</h4>
+
+                    <p>
+                        HTML, CSS, JavaScript, Python, C, React
+                    </p>
+                </div>
+
+                <div class="about-card about-reveal">
+                    <i data-lucide="graduation-cap"></i>
+
+                    <h4>Education</h4>
+
+                    <p>
+                        BSc in Computer Science
+                    </p>
+                </div>
+
+                <div class="about-card about-reveal">
+                    <i data-lucide="folder"></i>
+
+                    <h4>Projects</h4>
+
+                    <p>
+                        Built more than 5 projects
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+ <!-- PROJECTS -->
+            <section id="projects" class="section projects-section">
+
+    <div class="projects-container">
+
+        <!-- HEADER -->
+        <div class="projects-header">
+
+            <p class="section-number projects-reveal">
+                Projects
+            </p>
+
+            <h2 class="projects-title projects-reveal">
+                Featured Work
+            </h2>
+            <hr class="projects-line projects-reveal">
+
+            <p class="projects-description projects-reveal">
+                A showcase of my recent projects demonstrating expertise in
+                web development, modern frameworks, and creative problem-solving.
+            </p>
+
+        </div>
+
+
+        <!-- PROJECT CARDS -->
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+            <article class="project-card projects-reveal">
+
+    <div class="project-card-inner">
+
+        <div class="project-image">
+            <img src="images/images (2).jpg" alt="E-Commerce Website">
+        </div>
+
+        <div class="project-content">
+
+            <h3>E-Commerce Website</h3>
+
+            <p>
+                Modern online store with product filtering,
+                cart, and payment systems.
+            </p>
+
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+
+                <a href="#" class="project-btn">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+
+                <a href="#" class="project-btn">
+                    <i data-lucide="external-link"></i>
+                    Live Demo
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+            <!-- PROJECT 2 -->
+            <article class="project-card projects-reveal">
+
+    <div class="project-card-inner">
+
+
+                <div class="project-image">
+
+                    <img
+                        src="images/Capture d’écran 2026-08-18 150210.png"
+                        alt="Portfolio Website"
+                    >
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Portfolio Website
+                    </h3>
+
+                    <p>
+                        Personal portfolio to showcase my design
+                        and development projects.
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a href="#" class="project-btn">
+
+                            <i class="fa-brands fa-github"></i>
+
+                            GitHub
+
+                        </a>
+
+                        <a href="#" class="project-btn">
+
+                            <i data-lucide="external-link"></i>
+
+                            Live Demo
+
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 3 -->
+            <article class="project-card projects-reveal">
+
+    <div class="project-card-inner">
+
+
+                <div class="project-image">
+
+                    <img
+                        src="images/images.jpg"
+                        alt="Weather App"
+                    >
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Weather App
+                    </h3>
+
+                    <p>
+                        Responsive application showing real-time
+                        weather data using an API.
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>API</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a href="#" class="project-btn">
+
+                            <i class="fa-brands fa-github"></i>
+
+                            GitHub
+
+                        </a>
+
+                        <a href="#" class="project-btn">
+
+                            <i data-lucide="external-link"></i>
+
+                            Live Demo
+
+                        </a>
+
+                    </div>
+
+                </div>
+    </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     SERVICES
+========================================= -->
+
+<section id="services" class="section services-section">
+
+    <div class="services-container">
+
+        <!-- HEADER -->
+        <div class="services-header">
+
+            <p class="section-number services-reveal">
+                Services
+            </p>
+
+            <h2 class="services-title services-reveal">
+                Our Features & Services
+            </h2>
+
+            <div class="services-line"></div>
+
+        </div>
+
+
+        <!-- SERVICES CARDS -->
+        <div class="services-grid">
+
+
+            <!-- SERVICE 1 -->
+            <article class="service-card services-reveal">
+
+                <div class="service-card-inner">
+
+                    <div class="service-content">
+
+                        <div class="service-icon">
+                            <i data-lucide="code-2"></i>
+                        </div>
+
+                        <h3>
+                            Web Development
+                        </h3>
+
+                        <p>
+                            I build modern and responsive websites
+                            with clean code and user-friendly interfaces.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 2 -->
+            <article class="service-card services-reveal">
+
+                <div class="service-card-inner">
+
+                    <div class="service-content">
+
+                        <div class="service-icon">
+                            <i data-lucide="layout-template"></i>
+                        </div>
+
+                        <h3>
+                            App Development
+                        </h3>
+
+                        <p>
+                            I create functional and responsive applications
+                            designed to provide a smooth user experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 3 -->
+            <article class="service-card services-reveal">
+
+                <div class="service-card-inner">
+
+                    <div class="service-content">
+
+                        <div class="service-icon">
+                            <i data-lucide="megaphone"></i>
+                        </div>
+
+                        <h3>
+                            Digital Marketing
+                        </h3>
+
+                        <p>
+                            I help create engaging digital experiences
+                            that improve visibility and connect with audiences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 4 -->
+            <article class="service-card services-reveal">
+
+                <div class="service-card-inner">
+
+                    <div class="service-content">
+
+                        <div class="service-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+
+                        <h3>
+                            Email Marketing
+                        </h3>
+
+                        <p>
+                            I create clean and effective email experiences
+                            designed to communicate clearly with users.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =========================================
+     CONTACT
+========================================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="contact-container">
+
+        <!-- HEADER -->
+        <div class="contact-header">
+
+            <p class="section-number contact-reveal">
+                05
+            </p>
+
+            <h2 class="contact-title contact-reveal">
+                Get in Touch with Us
+            </h2>
+
+            <div class="contact-line"></div>
+
+        </div>
+
+
+        <!-- CONTACT CONTENT -->
+        <div class="contact-content">
+
+
+            <!-- LEFT SIDE -->
+            <div class="contact-info contact-reveal">
+
+                <p class="contact-intro">
+                    I'm always open to discuss exciting projects
+                    and new opportunities. Let's collaborate!
+                </p>
+
+
+                <!-- EMAIL -->
+                <div class="contact-item">
+
+                    <div class="contact-item-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+
+                    <span>
+                        yacine@example.com
+                    </span>
+
+                </div>
+
+
+                <!-- PHONE -->
+                <div class="contact-item">
+
+                    <div class="contact-item-icon">
+                        <i data-lucide="phone"></i>
+                    </div>
+
+                    <span>
+                        +213 562 43 49 80
+                    </span>
+
+                </div>
+
+
+                <!-- LOCATION -->
+                <div class="contact-item">
+
+                    <div class="contact-item-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+
+                    <span>
+                        Algeria, M'sila
+                    </span>
+
+                </div>
+
+
+                <!-- SOCIAL MEDIA -->
+                <div class="social-links">
+
+                    <!-- GITHUB -->
+                    <a
+                        href="#"
+                        class="social-link github"
+                        aria-label="GitHub"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+
+                    <!-- LINKEDIN -->
+                    <a
+                        href="#"
+                        class="social-link linkedin"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+
+                    <!-- INSTAGRAM -->
+                    <a
+                        href="#"
+                        class="social-link instagram"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+
+                    <!-- WHATSAPP -->
+                    <a
+                        href="#"
+                        class="social-link whatsapp"
+                        aria-label="WhatsApp"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+            <form class="contact-form contact-reveal">
+
+
+                <!-- NAME -->
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder=" "
+                        required
+                    >
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="input-group">
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder=" "
+                        required
+                    >
+
+                    <label for="email">
+                        Your Email
+                    </label>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+                <div class="input-group textarea-group">
+
+                    <textarea
+                        id="message"
+                        placeholder=" "
+                        required
+                    ></textarea>
+
+                    <label for="message">
+                        Your Message
+                    </label>
+
+                </div>
+
+
+                <!-- SEND BUTTON -->
+                <button
+                    type="submit"
+                    class="contact-submit"
+                >
+
+                    <span>
+                        Send Message
+                    </span>
+
+                    <i data-lucide="send"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- BACK TO TOP BUTTON -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+</button>
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- LOGO -->
+        <h2 class="footer-logo">
+            YACINE
+        </h2>
+
+
+        <!-- NAVIGATION -->
+        <nav class="footer-nav">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#services">
+                Services
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- SOCIAL LINKS -->
+        <div class="footer-socials">
+
+            <!-- GitHub -->
+            <a
+                href="#"
+                aria-label="GitHub"
+                class="footer-social github"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+
+            <!-- LinkedIn -->
+            <a
+                href="#"
+                aria-label="LinkedIn"
+                class="footer-social linkedin"
+            >
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+
+            <!-- Instagram -->
+            <a
+                href="#"
+                aria-label="Instagram"
+                class="footer-social instagram"
+            >
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+
+            <!-- WhatsApp -->
+            <a
+                href="#"
+                aria-label="WhatsApp"
+                class="footer-social whatsapp"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+        <p class="footer-copy">
+            © 2026 Yacine. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+  
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
