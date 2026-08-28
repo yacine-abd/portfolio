@@ -35,7 +35,7 @@
 
 ### Home
 
-![Portfolio Preview](images/developer.png)
+![Portfolio Preview](images/Capture d’écran 2026-08-18 150210.png)
 
 ---
 
